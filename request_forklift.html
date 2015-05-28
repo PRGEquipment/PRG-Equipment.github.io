@@ -191,32 +191,148 @@
         
 
         
-        
-        
-        <!-- Start Purchase Section -->
-        <div class="section purchase">
+        <div id="content">
             <div class="container">
+                <!-- Classic Heading -->
+				<h4 class="classic-title"><span>Request a Forklift</span></h4>
+				
+                <form class="form-horizontal">
+                    <div class="form-group">
+                        <label for="BusinessName" class="col-sm-2 control-label">Business Name</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="BusinessName" placeholder="Business Name">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="ContactName" class="col-sm-2 control-label">Contact Name</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="ContactName" placeholder="Contact Name"></input>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="Email" class="col-sm-2 control-label">Email</label>
+                        <div class="col-sm-10">
+                            <input type="email" class="form-control" id="Email" placeholder="Email"></input>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="Phone" class="col-sm-2 control-label">Phone Number</label>
+                        <div class="col-sm-10">
+                            <input type="tel" class="form-control" id="Phone" placeholder="Phone"></input>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="LiftingCapacity" class="col-sm-2 control-label">Lifting Capacity</label>
+                        <div class="col-sm-10">
+                            <input type="number" class="form-control" id="LiftingCapacity" placeholder="Lifting Capacity in lbs"></input>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="Phone" class="col-sm-2 control-label">Phone Number</label>
+                        <div class="col-sm-10">
+                            <input type="tel" class="form-control" id="Phone" placeholder="Phone"></input>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="FuelType" class="col-sm-2 control-label">Fuel Type</label>
+                        <div class="radio col-sm-10">
+                            <label class="radio-inline">
+                                <input type="radio" name="LPG" id="LPG" value="LPG">
+                                LPG
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" name="Diesel" id="Diesel" value="Diesel">
+                                Diesel
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" name="Electric" id="Electric" value="Electric">
+                                Electric
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="MastSpecification" class="col-sm-2 control-label">Mast Specification</label>
+                        <div class="radio col-sm-10">
+                            <label class="radio-inline">
+                                <input type="radio" name="3Stage" id="3Stage" value="3Stage">
+                                3 Stage
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" name="2Stage" id="2Stage" value="2Stage">
+                                2 Stage
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="ForkliftType" class="col-sm-2 control-label">Forklift Type</label>
+                        <div class="radio col-sm-10">
+                            <label class="radio-inline">
+                                <input type="radio" name="Cushion" id="Cushion" value="Cushion">
+                                Cushion
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" name="Pneumatic" id="Pneumatic" value="Pneumatic">
+                                Pneumatic
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="ForkLength" class="col-sm-2 control-label">Fork Length</label>
+                        <div class="col-sm-10">
+                            <select class="form-control">
+                                <option>42</option>
+                                <option>48</option>
+                                <option>60</option>
+                                <option>72</option>
+                                <option>96</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="Attachments" class="col-sm-2 control-label">Forklift Attachments</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="Attachments" placeholder="List any attachments"></input>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="OtherReqs" class="col-sm-2 control-label">Other Requirements</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="OtherReqs" placeholder="List any other requirements"></input>
+                        </div>
+                    </div>
+                </form>
+                
+				<!-- Start Contact Form 
+    			<form role="form" class="contact-form" id="contact-form" method="post">
+    				<div class="form-group">
+    					<div class="controls">
+    						<input type="text" placeholder="Name" name="name">
+    					</div>
+    				</div>
+    				<div class="form-group">
+    					<div class="controls">
+    						<input type="email" class="email" placeholder="Email" name="email">
+    					</div>
+    				</div>
+    				<div class="form-group">
+    					<div class="controls">
+    						<input type="text" class="requiredField" placeholder="Subject" name="subject">
+    					</div>
+    				</div>
 
-                <!-- Start Video Section Content -->
-                <div class="section-video-content text-center">
+    				<div class="form-group">
 
-                    <!-- Start Animations Text -->
-                    <h1 class="fittext wite-text uppercase tlt">
-                      ? Contact <strong>(832) 844-5479</strong>
-                      <span class="texts">
-                        <span>Inventory</span>
-                        <span>Sales</span>
-                        <span>Rentals</span>
-                        <span>Information</span>
-                      </span>
-                    </h1>
-                    <!-- End Animations Text -->
-                </div>
-                <!-- End Section Content -->
-
-            </div><!-- .container -->
+    					<div class="controls">
+    						<textarea rows="7"  placeholder="Message" name="message"></textarea>
+    					</div>
+    				</div>
+    				<button type="submit" id="submit" class="btn-system btn-large">Send</button><div id="success" style="color:#34495e;"></div>
+				</form>
+				<!-- End Contact Form -->
+            </div>
         </div>
-        <!-- End Purchase Section -->
+        
+        
         
         <!-- Start Content -->
 		<div id="content">

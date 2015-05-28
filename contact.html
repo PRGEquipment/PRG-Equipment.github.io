@@ -65,6 +65,43 @@
 	<script src="http://maps.googleapis.com/maps/api/js?sensor=false" type="text/javascript"></script>
 	<script type="text/javascript" src="js/script.js"></script>
 
+<script>
+
+		$(document).ready(function () {
+
+			$("input#submit").click(function(){
+
+				$.ajax({
+
+					type: "POST",
+
+					url: "contact.php", //
+ 
+					data: $('form.contact').serialize(),
+
+					success: function(msg){
+
+						$("#thanks").html(msg)
+
+						$("#form-content").modal('hide');
+	
+					},
+
+					error: function(){
+
+						alert("failure");
+
+					}
+
+				});
+
+			});
+
+		});
+
+    </script>
+
+
 
 	
 	<!--[if IE 8]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
@@ -275,31 +312,30 @@ jQuery(document).ready(function() {
 				<h4 class="classic-title"><span>Contact Us</span></h4>
 				
 				<!-- Start Contact Form -->
-    <form role="form" class="contact-form" id="contact-form" method="post">
-    <div class="form-group">
-    <div class="controls">
-    <input type="text" placeholder="Name" name="name">
-    </div>
-    </div>
-    <div class="form-group">
-    <div class="controls">
-    <input type="email" class="email" placeholder="Email" name="email">
-    </div>
-    </div>
-    <div class="form-group">
-    <div class="controls">
-    <input type="text" class="requiredField" placeholder="Subject" name="subject">
-    </div>
-    </div>
+    			<form role="form" class="contact-form" id="contact-form" method="post" action="contact.php">
+    				<div class="form-group">
+    					<div class="controls">
+    						<input type="text" placeholder="Name" name="name">
+    					</div>
+    				</div>
+    				<div class="form-group">
+    					<div class="controls">
+    						<input type="email" class="email" placeholder="Email" name="email">
+    					</div>
+    				</div>
+    				<div class="form-group">
+    					<div class="controls">
+    						<input type="text" class="requiredField" placeholder="Subject" name="subject">
+    					</div>
+    				</div>
 
-    <div class="form-group">
-
-    <div class="controls">
-    <textarea rows="7"  placeholder="Message" name="message"></textarea>
-    </div>
-    </div>
-    <button type="submit" id="submit" class="btn-system btn-large">Send</button><div id="success" style="color:#34495e;"></div>
-    </form>
+    				<div class="form-group">
+    					<div class="controls">
+    						<textarea rows="7"  placeholder="Message" name="message"></textarea>
+    					</div>
+    				</div>
+    				<button type="submit" id="submit" class="btn-system btn-large">Send</button><div id="success" style="color:#34495e;"></div>
+				</form>
 				<!-- End Contact Form -->
 				
 			</div>

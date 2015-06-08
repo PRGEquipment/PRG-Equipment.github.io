@@ -86,7 +86,7 @@
             <div class="top-bar">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-7">
+                        <div class="col-md-12">
                             <!-- Start Contact Info -->
                             <ul class="contact-details">
                                 <li><a href="https://www.google.com/maps/place/6915+Queensclub+Dr,+Houston,+TX+77069/@29.986065,-95.543203,17z/data=!3m1!4b1!4m2!3m1!1s0x8640cd98350105f7:0x3b1a3f551b5f9c94" target="_blank"><i class="fa fa-map-marker"></i> 6915 Queensclub Drive, Houston, TX 77069</a>
@@ -124,10 +124,10 @@
                                 <a href="index.html">Home</a>
                             </li>
                             <li>
-                                <a class="active" href="buy.html">Inventory</a>
+                                <a class="active" href="buy.html" target="_blank">Inventory</a>
                                 <ul class="dropdown">
                                     <li>
-                                        <a href="buy.html">Buy Forklift</a>
+                                        <a href="buy.html" target="_blank">Buy Forklift</a>
                                     </li>
                                     <li>
                                         <a href="request_forklift.html">Request a Forklift</a>
@@ -193,10 +193,45 @@
         
         <div id="content">
             <div class="container">
+                
+                <div class="row">
+            
+            <div class="col-md-7">
+              
+              <!-- Classic Heading -->
+              <h4 class="classic-title"><span>Welcome To Our Agency</span></h4>
+              
+              <!-- Some Text -->
+              <p>We at PRG want to be able to offer a complete service to anyone who needs a forklift. This forklift request form will enable all of your necessities to be fulfilled.
+                    If you need anything more specific, feel free to contact us.
+                    Costumer satisfaction is of upmost importance to us.
+                    
+              </p>
+              
+            </div>
+            
+            <div class="col-md-5"> 
+              
+              <!-- Start Touch Slider -->
+              <div class="touch-slider" data-slider-navigation="true" data-slider-pagination="true">
+                <div class="item"><img alt="" src="images/about-01.jpg"></div>
+                <div class="item"><img alt="" src="images/about-02.jpg"></div>
+                <div class="item"><img alt="" src="images/about-03.jpg"></div>
+              </div>
+              <!-- End Touch Slider -->
+              
+            </div>
+            
+          </div>
+          
+          <!-- Divider -->
+          <div class="hr1" style="margin-bottom:50px;"></div>
+                
+                
                 <!-- Classic Heading -->
 				<h4 class="classic-title"><span>Request a Forklift</span></h4>
 				
-                <form class="form-horizontal">
+                <form class="form-horizontal" method="post">
                     <div class="form-group">
                         <label for="BusinessName" class="col-sm-2 control-label">Business Name</label>
                         <div class="col-sm-10">
@@ -300,6 +335,7 @@
                             <input type="text" class="form-control" id="OtherReqs" placeholder="List any other requirements"></input>
                         </div>
                     </div>
+                    <button type="submit" id="submit" class="btn-system btn-large">Submit</button>
                 </form>
                 
 				<!-- Start Contact Form 
@@ -331,26 +367,7 @@
 				<!-- End Contact Form -->
             </div>
         </div>
-        
-        
-        
-        <!-- Start Content -->
-		<div id="content">
-			<div class="container">
-				
-                <!-- Start Call Action -->
-					<div class="call-action call-action-boxed call-action-style1 no-descripton clearfix">
-						<!-- Ca.ll Action Text -->
-						<center><h2 class="primary">The <strong>PRG website</strong> is under construction.</h2></center>
-					</div>
-					<!-- End Call Action -->
-                <!-- Divider -->
-				<div class="hr5" style="margin-top:25px; margin-bottom:45px;"></div>
-                
-			</div>
-		</div>
-		<!-- End Content -->
-        
+      
         <!-- Start Footer Section -->
         <footer>
             <div class="container">
@@ -358,7 +375,7 @@
                     
                     
                     <!-- Start Contact Widget -->
-                    <div class="col-md-12 col-xs-12">
+                    <div class="col-md-9 col-xs-12">
                         <div class="footer-widget contact-widget">
                             <h4><img src="images/PRG.png" class="img-responsive" alt="Footer Logo" /></h4>
                             <p>Based in Houston, Texas, Preferred Resource Group (PRG) is a top provider of high-grade industrial equipment, such as new and used forklifts with a large capacity. We also offer material handling equipment available for rent.</p>
@@ -370,24 +387,32 @@
                         </div>
                     </div><!-- .col-md-3 -->
                     <!-- End Contact Widget -->
-
                     
+                    <div class="col-md-3 col-xs-12">
+                        <div class="footer-widget social-widget">
+                            <h4>Social Media<span class="head-line"></span></h4>
+                            <ul class="social-icons">
+                                <li>
+                                    <a class="facebook" href="#"><i class="fa fa-facebook"></i></a>
+                                </li>
+                                <li>
+                                    <a class="twitter" href="#"><i class="fa fa-twitter"></i></a>
+                                </li>
+                                <li>
+                                    <a class="google" href="#"><i class="fa fa-google-plus"></i></a>
+                                </li>
+                                <li>
+                                    <a class="linkdin" href="#"><i class="fa fa-linkedin"></i></a>
+                                </li>
+                                <li>
+                                    <a class="youtube" href="#"><i class="fa fa-youtube"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div><!-- .row -->
-
-                <!-- Start Copyright -->
-                <div class="copyright-section">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <p>Created by S2WDevelopment and Cole Ford</a> </p>
-                        </div><!-- .col-md-6 -->
-                    </div><!-- .row -->
-                </div>
-                <!-- End Copyright -->
-
-            </div>
-        </footer>
-        <!-- End Footer Section -->
-        
+             </div>
+          </footer>
         
     </div>
     <!-- End Full Body Container -->

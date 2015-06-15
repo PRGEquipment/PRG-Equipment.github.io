@@ -32,6 +32,8 @@
 
     <!-- Css3 Transitions Styles  -->
     <link rel="stylesheet" type="text/css" href="css/animate.css" media="screen">
+    
+    <link rel="stylesheet" type="text/css" href="css/colors/red.css" media="screen" />
 
     <!-- Color CSS Styles  -->
     <link rel="stylesheet" type="text/css" href="css/colors/red.css" title="red" media="screen" />
@@ -185,6 +187,230 @@
             
         </header> 
         <!-- End Header Section -->
+        
+        <div id="content">
+            <div class="container">
+                
+                <div class="row">
+            
+            <div class="col-md-7">
+              
+              <!-- Classic Heading -->
+              <h4 class="classic-title"><span>Welcome To PRG</span></h4>
+              
+              <!-- Some Text -->
+              <p>We at PRG want to be able to offer a complete service to anyone who needs a forklift. This forklift request form will enable all of your necessities to be fulfilled.
+                    If you need anything more specific, feel free to contact us.
+                    Costumer satisfaction is of upmost importance to us.
+                    
+              </p>
+              
+            </div>
+            
+            <div class="col-md-5"> 
+              
+              <!-- Start Touch Slider -->
+              <div class="touch-slider" data-slider-navigation="true" data-slider-pagination="true">
+                <div class="item"><img alt="" src="images/about-01.jpg"></div>
+                <div class="item"><img alt="" src="images/about-02.jpg"></div>
+                <div class="item"><img alt="" src="images/about-03.jpg"></div>
+              </div>
+              <!-- End Touch Slider -->
+              
+            </div>
+            
+          </div>
+          
+          <!-- Divider -->
+          <div class="hr1" style="margin-bottom:50px;"></div>
+                
+                
+                <!-- Classic Heading -->
+				<h4 class="classic-title"><span>Trade In a Forklift</span></h4>
+				
+                <form class="form-horizontal" method="post" action="request_forklift.php">
+                    <div class="form-group">
+                        <label for="BusinessName" class="col-sm-2 control-label">Business Name</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="BusinessName" placeholder="Business Name" name="business_name"></input>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="ContactName" class="col-sm-2 control-label">Contact Name</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="ContactName" placeholder="Contact Name" name="contact_name"></input>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="Email" class="col-sm-2 control-label">Email</label>
+                        <div class="col-sm-10">
+                            <input type="email" class="form-control" id="Email" placeholder="Email" name="email"></input>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="Phone" class="col-sm-2 control-label">Phone Number</label>
+                        <div class="col-sm-10">
+                            <input type="tel" class="form-control" id="Phone" placeholder="Phone" name="phone"></input>
+                        </div>
+                    </div>
+                <div class="col-sm-6">    
+                    <h5>Your Forklift</h5>
+                    <div class="form-group">
+                        <label for="LiftingCapacity" class="col-sm-2 control-label">Lifting Capacity</label>
+                        <div class="col-sm-10">
+                            <input type="number" class="form-control" id="LiftingCapacity" placeholder="Lifting Capacity in lbs" name="lifting_capacity"></input>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="FuelType" class="col-sm-2 control-label">Fuel Type</label>
+                        <div class="radio col-sm-10">
+                            <label class="radio-inline">
+                                <input type="radio" name="LPG" id="LPG" value="LPG">
+                                LPG
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" name="diesel" id="Diesel" value="Diesel">
+                                Diesel
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" name="electric" id="Electric" value="Electric">
+                                Electric
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="MastSpecification" class="col-sm-2 control-label">Mast Specification</label>
+                        <div class="radio col-sm-10">
+                            <label class="radio-inline">
+                                <input type="radio" name="stage3" id="3Stage" value="3Stage">
+                                3 Stage
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" name="stage2" id="2Stage" value="2Stage">
+                                2 Stage
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="ForkliftType" class="col-sm-2 control-label">Forklift Type</label>
+                        <div class="radio col-sm-10">
+                            <label class="radio-inline">
+                                <input type="radio" name="cushion" id="Cushion" value="Cushion">
+                                Cushion
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" name="pneumatic" id="Pneumatic" value="Pneumatic">
+                                Pneumatic
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="ForkLength" class="col-sm-2 control-label">Fork Length</label>
+                        <div class="col-sm-10">
+                            <select class="form-control" name="fork_length">
+                                <option>42</option>
+                                <option>48</option>
+                                <option>60</option>
+                                <option>72</option>
+                                <option>96</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="Attachments" class="col-sm-2 control-label">Forklift Attachments</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="Attachments" placeholder="List any attachments" name="attachments"></input>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="OtherReqs" class="col-sm-2 control-label">Other Requirements</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="OtherReqs" placeholder="List any other requirements" name="other_reqs"></input>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <h5>Forklift for Purchase</h5>
+                    <div class="form-group">
+                        <label for="LiftingCapacity" class="col-sm-2 control-label">Lifting Capacity</label>
+                        <div class="col-sm-10">
+                            <input type="number" class="form-control" id="LiftingCapacity" placeholder="Lifting Capacity in lbs" name="lifting_capacity"></input>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="FuelType" class="col-sm-2 control-label">Fuel Type</label>
+                        <div class="radio col-sm-10">
+                            <label class="radio-inline">
+                                <input type="radio" name="LPG" id="LPG" value="LPG">
+                                LPG
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" name="diesel" id="Diesel" value="Diesel">
+                                Diesel
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" name="electric" id="Electric" value="Electric">
+                                Electric
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="MastSpecification" class="col-sm-2 control-label">Mast Specification</label>
+                        <div class="radio col-sm-10">
+                            <label class="radio-inline">
+                                <input type="radio" name="stage3" id="3Stage" value="3Stage">
+                                3 Stage
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" name="stage2" id="2Stage" value="2Stage">
+                                2 Stage
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="ForkliftType" class="col-sm-2 control-label">Forklift Type</label>
+                        <div class="radio col-sm-10">
+                            <label class="radio-inline">
+                                <input type="radio" name="cushion" id="Cushion" value="Cushion">
+                                Cushion
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" name="pneumatic" id="Pneumatic" value="Pneumatic">
+                                Pneumatic
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="ForkLength" class="col-sm-2 control-label">Fork Length</label>
+                        <div class="col-sm-10">
+                            <select class="form-control" name="fork_length">
+                                <option>42</option>
+                                <option>48</option>
+                                <option>60</option>
+                                <option>72</option>
+                                <option>96</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="Attachments" class="col-sm-2 control-label">Forklift Attachments</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="Attachments" placeholder="List any attachments" name="attachments"></input>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="OtherReqs" class="col-sm-2 control-label">Other Requirements</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="OtherReqs" placeholder="List any other requirements" name="other_reqs"></input>
+                        </div>
+                    </div>
+                </div>
+                    <button type="submit" id="submit" name="submit" class="btn-system btn-large">Submit</button>
+                </form>
+				<!-- End Contact Form -->
+            </div>
+        </div>
+        
         
 
         <!-- Start Footer Section -->

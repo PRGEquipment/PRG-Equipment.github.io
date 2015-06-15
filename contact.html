@@ -30,6 +30,8 @@
 	<!-- Responsive CSS Styles  -->
 	<link rel="stylesheet" type="text/css" href="css/responsive.css" media="screen">
 	
+	<link rel="stylesheet" type="text/css" href="css/colors/red.css" media="screen" />
+	
 	<!-- Color CSS Styles  -->
 	<link rel="stylesheet" type="text/css" href="css/colors/red.css" title="red" media="screen" />
 	<link rel="stylesheet" type="text/css" href="css/colors/jade.css" title="jade" media="screen" />
@@ -64,43 +66,6 @@
 	<script type="text/javascript" src="js/jquery.parallax.js"></script>
 	<script src="http://maps.googleapis.com/maps/api/js?sensor=false" type="text/javascript"></script>
 	<script type="text/javascript" src="js/script.js"></script>
-
-<script>
-
-		$(document).ready(function () {
-
-			$("input#submit").click(function(){
-
-				$.ajax({
-
-					type: "POST",
-
-					url: "contact.php", //
- 
-					data: $('form.contact').serialize(),
-
-					success: function(msg){
-
-						$("#thanks").html(msg)
-
-						$("#form-content").modal('hide');
-	
-					},
-
-					error: function(){
-
-						alert("failure");
-
-					}
-
-				});
-
-			});
-
-		});
-
-    </script>
-
 
 
 	
@@ -312,26 +277,26 @@ jQuery(document).ready(function() {
     			<form role="form" class="contact-form" id="contact-form" method="post" action="contact.php">
     				<div class="form-group">
     					<div class="controls">
-    						<input type="text" placeholder="Name" name="name">
+    						<input type="text" placeholder="Name" name="name" class="form-control">
     					</div>
     				</div>
     				<div class="form-group">
     					<div class="controls">
-    						<input type="email" class="email" placeholder="Email" name="email">
+    						<input type="email" class="email" placeholder="Email" name="email" class="form-control">
     					</div>
     				</div>
     				<div class="form-group">
     					<div class="controls">
-    						<input type="text" class="requiredField" placeholder="Subject" name="subject">
+    						<input type="text" class="requiredField" placeholder="Subject" name="topic" class="form-control">
     					</div>
     				</div>
 
     				<div class="form-group">
     					<div class="controls">
-    						<textarea rows="7"  placeholder="Message" name="message"></textarea>
+    						<textarea rows="7"  placeholder="Message" name="message" class="form-control"></textarea>
     					</div>
     				</div>
-    				<button type="submit" id="submit" class="btn-system btn-large">Send</button><div id="success" style="color:#34495e;"></div>
+    				<button type="submit" id="submit" name="submit" class="btn-system btn-large">Send</button><div id="success" style="color:#34495e;"></div>
 				</form>
 				<!-- End Contact Form -->
 				

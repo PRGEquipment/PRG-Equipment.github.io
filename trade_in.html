@@ -196,13 +196,12 @@
             <div class="col-md-7">
               
               <!-- Classic Heading -->
-              <h4 class="classic-title"><span>Welcome To PRG</span></h4>
+              <h4 class="classic-title"><span>Trade In Your Forklift</span></h4>
               
               <!-- Some Text -->
-              <p>We at PRG want to be able to offer a complete service to anyone who needs a forklift. This forklift request form will enable all of your necessities to be fulfilled.
-                    If you need anything more specific, feel free to contact us.
-                    Costumer satisfaction is of upmost importance to us.
-                    
+              <p>Trading in your forklift for a new replacement may be a better option for your company. PRG will buy your used forklift and put that money towards a new one that is more attuned to your company's needs.
+                 Having us right around the corner make this transaction as smooth as possible, and helping you get your products handled efficiently.
+                 If you need anything more specific or personalized such as pricing or any other ideas, please call us. We will be happy to help.
               </p>
               
             </div>
@@ -226,9 +225,9 @@
                 
                 
                 <!-- Classic Heading -->
-				<h4 class="classic-title"><span>Trade In a Forklift</span></h4>
+				<h4 class="classic-title"><span>Forklift Trade In Form</span></h4>
 				
-                <form class="form-horizontal" method="post" action="request_forklift.php">
+                <form class="form-horizontal" method="post" action="trade_in.php">
                     <div class="form-group">
                         <label for="BusinessName" class="col-sm-2 control-label">Business Name</label>
                         <div class="col-sm-10">
@@ -258,7 +257,7 @@
                     <div class="form-group">
                         <label for="LiftingCapacity" class="col-sm-2 control-label">Lifting Capacity</label>
                         <div class="col-sm-10">
-                            <input type="number" class="form-control" id="LiftingCapacity" placeholder="Lifting Capacity in lbs" name="lifting_capacity"></input>
+                            <input type="number" class="form-control" id="Lifting_Capacity" placeholder="Lifting Capacity in lbs" name="lifting_capacity"></input>
                         </div>
                     </div>
                     <div class="form-group">
@@ -323,9 +322,9 @@
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="OtherReqs" class="col-sm-2 control-label">Other Requirements</label>
+                        <label for="OtherReqs" class="col-sm-2 control-label">Other Additions</label>
                         <div class="col-sm-10">
-                            <input type="text" class="form-control" id="OtherReqs" placeholder="List any other requirements" name="other_reqs"></input>
+                            <input type="text" class="form-control" id="other_adds" placeholder="List any other additions" name="other_adds"></input>
                         </div>
                     </div>
                 </div>
@@ -334,22 +333,22 @@
                     <div class="form-group">
                         <label for="LiftingCapacity" class="col-sm-2 control-label">Lifting Capacity</label>
                         <div class="col-sm-10">
-                            <input type="number" class="form-control" id="LiftingCapacity" placeholder="Lifting Capacity in lbs" name="lifting_capacity"></input>
+                            <input type="number" class="form-control" id="Lifting_Capacity2" placeholder="Lifting Capacity in lbs" name="lifting_capacity2"></input>
                         </div>
                     </div>
                     <div class="form-group">
                         <label for="FuelType" class="col-sm-2 control-label">Fuel Type</label>
                         <div class="radio col-sm-10">
                             <label class="radio-inline">
-                                <input type="radio" name="LPG" id="LPG" value="LPG">
+                                <input type="radio" name="LPG2" id="LPG2" value="LPG">
                                 LPG
                             </label>
                             <label class="radio-inline">
-                                <input type="radio" name="diesel" id="Diesel" value="Diesel">
+                                <input type="radio" name="diesel2" id="Diesel2" value="Diesel">
                                 Diesel
                             </label>
                             <label class="radio-inline">
-                                <input type="radio" name="electric" id="Electric" value="Electric">
+                                <input type="radio" name="electric2" id="Electric2" value="Electric">
                                 Electric
                             </label>
                         </div>
@@ -358,11 +357,11 @@
                         <label for="MastSpecification" class="col-sm-2 control-label">Mast Specification</label>
                         <div class="radio col-sm-10">
                             <label class="radio-inline">
-                                <input type="radio" name="stage3" id="3Stage" value="3Stage">
+                                <input type="radio" name="stage32" id="3Stage" value="3Stage">
                                 3 Stage
                             </label>
                             <label class="radio-inline">
-                                <input type="radio" name="stage2" id="2Stage" value="2Stage">
+                                <input type="radio" name="stage22" id="2Stage" value="2Stage">
                                 2 Stage
                             </label>
                         </div>
@@ -371,11 +370,11 @@
                         <label for="ForkliftType" class="col-sm-2 control-label">Forklift Type</label>
                         <div class="radio col-sm-10">
                             <label class="radio-inline">
-                                <input type="radio" name="cushion" id="Cushion" value="Cushion">
+                                <input type="radio" name="cushion2" id="Cushion2" value="Cushion">
                                 Cushion
                             </label>
                             <label class="radio-inline">
-                                <input type="radio" name="pneumatic" id="Pneumatic" value="Pneumatic">
+                                <input type="radio" name="pneumatic2" id="Pneumatic2" value="Pneumatic">
                                 Pneumatic
                             </label>
                         </div>
@@ -383,7 +382,7 @@
                     <div class="form-group">
                         <label for="ForkLength" class="col-sm-2 control-label">Fork Length</label>
                         <div class="col-sm-10">
-                            <select class="form-control" name="fork_length">
+                            <select class="form-control" name="fork_length2">
                                 <option>42</option>
                                 <option>48</option>
                                 <option>60</option>
@@ -393,15 +392,15 @@
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="Attachments" class="col-sm-2 control-label">Forklift Attachments</label>
+                        <label for="Attachments2" class="col-sm-2 control-label">Forklift Attachments</label>
                         <div class="col-sm-10">
-                            <input type="text" class="form-control" id="Attachments" placeholder="List any attachments" name="attachments"></input>
+                            <input type="text" class="form-control" id="Attachments2" placeholder="List any attachments" name="attachments2"></input>
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="OtherReqs" class="col-sm-2 control-label">Other Requirements</label>
+                        <label for="other_reqs" class="col-sm-2 control-label">Other Requirements</label>
                         <div class="col-sm-10">
-                            <input type="text" class="form-control" id="OtherReqs" placeholder="List any other requirements" name="other_reqs"></input>
+                            <input type="text" class="form-control" id="other_reqs" placeholder="List any other requirements" name="other_reqs"></input>
                         </div>
                     </div>
                 </div>
